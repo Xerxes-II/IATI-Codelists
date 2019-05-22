@@ -52,9 +52,6 @@
       <xs:any namespace="##other" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="public-database" use="optional"/>
-    <xs:attribute name="status" type="xs:string" use="optional"/>
-    <xs:attribute name="activation-date" type="xs:date" use="optional"/>
-    <xs:attribute name="withdrawal-date" type="xs:date" use="optional"/>
     <xs:anyAttribute processContents="lax" namespace="##other"/>
   </xs:complexType>
 </xs:element>

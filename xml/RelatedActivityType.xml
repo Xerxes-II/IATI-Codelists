@@ -61,7 +61,7 @@
             </name>
             <description>
                 <narrative>A report by another organisation on the same activity you are reporting (excluding activities reported as part of a financial transaction - e.g. provider-activity-id or a co-funded activity, using code 4)</narrative>
-                <narrative xml:lang="fr">Rapport d’une autre organisation sur la même activité que celle dont vous rendez compte (à l’exclusion des activités communiquées dans le cadre d’une transaction financière, p. ex., identifiant de l’activité d’un prestataire ou activité co-financée, en utilisant le code 4)</narrative>
+                <narrative xml:lang="fr">Rapport d’une autre organisation sur la même activité que celle dont vous rendez compte (à l’exclusion des activités communiquées dans le cadre d’une transaction financière, p. ex., identifiant de l’activité d’un prestataire ou activité co-financée, en utilisant le code 4)</narrative>
             </description>
         </codelist-item>
     </codelist-items>

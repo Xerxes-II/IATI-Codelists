@@ -12,7 +12,7 @@ IATI Codelists
 Introduction
 ------------
 
-This repository contains the codelists for the IATI Standard, and is part of the Single Source of Truth (SSOT). For more information about the SSOT, please see http://iatistandard.org/202/developer/ssot/ 
+This repository contains the codelists for the IATI Standard, and is part of the Single Source of Truth (SSOT). For more information about the SSOT, please see http://iatistandard.org/201/developer/ssot/ 
 
 The Codelists
 =============
@@ -66,7 +66,7 @@ It's structured as a list of `mapping` elements, which each have a `path` elemen
         ...
     </mappings>
 
-A `JSON version <http://iatistandard.org/202/codelists/downloads/clv1/mapping.json>`__ is also available.
+A `JSON version <http://iatistandard.org/201/codelists/downloads/clv1/mapping.json>`__ is also available.
 
 Testing Compliance Against Codelists
 ===================================
@@ -76,10 +76,6 @@ Testing Compliance Against Codelists
 Extra Metadata
 ==============
 
-``complete`` - boolean that describes whether the codelist is 'complete' ie. having a value not on the codelist is definitely invalid. An example of an incomplete codelist is country codes, where extra codes may exist for disputed countries.
-
-Translation script
-==================
 
 ``translations_csv_to_xml.py`` can be run to output XML codelists with translated elements, the expected format of the CSV files is that they must have ``code`` and ``name (<language iso code>)`` columns, and they can have ``description (<language iso code>)`` as well. The python script must be modified to include ``OUTPUTDIR``, ``PATH_TO_CSV``, ``PATH_TO_XML`` and ``LANG``. 
 
@@ -87,3 +83,14 @@ Add metadata categories
 =======================
 
 ``category_csv_to_xml.py`` can be run to output XML codelists with ``metadata/category`` elements, the expected format of the CSV files is that they must have ``Codelist``, ``Type_version <version number>`` and ``New Type`` columns. The python script must be modified to include the output directories, ``VERSION``, ``PATH_TO_XML`` and ``CSV_FILE``. 
+=======
+`complete` - boolean that describes whether the codelist is 'complete' ie. having a value not on the codelist is definitely invalid. An example of an incomplete codelist is country codes, where extra codes may exist for disputed countries.
+
+Information for developers
+==========================
+
+This tool supports Python 3.x. To use this script, we recommend the use of a virtual environment::
+
+    python3 -m venv pyenv
+    source pyenv/bin/activate
+    pip install -r requirements.txt
